@@ -1,0 +1,160 @@
+body {
+	background-color: #FFFFFF;
+}
+.btn-filled {
+		padding: 3px 14px !important;
+	border: none !important;
+	outline: none !important;
+	border-radius: 0px; 
+	color:#F9F9F9 !important;
+	background-color: #1A73D2 !important;;
+}
+.gallery-col img{
+	width: 100%;
+}
+#hero-heading, #hero-desc {
+	position: relative;
+	z-index: 3;
+}
+.highlighted {
+	color: #2276C6;
+}
+html * {
+	font-family: "Fredoka", sans-serif;
+}
+h1, h2, h3, h4, h5, h1 span, h2 span{
+	font-family: "Archivo Black", sans-serif;
+}
+.bg-light {
+	background-color: #FBFBFB !important;
+}
+.nav-header {
+	background-color: #FFFFFF;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	min-height: 54px;
+}
+.navbar-toggler {
+	border: none;
+	font-size: 200% !important;
+}
+#site-logo {
+	height: 34px;
+}
+.small-line {
+	 width: 70px;
+	 height: 3px;
+	 margin: 8px 0px;
+	 background-color:#1A73D2;
+}
+.box-shadow {
+	box-shadow: 0px 0px #888;
+}
+#booking-form input[type=text], #booking-form input[type=date], #booking-form select{
+	height: 36px !important;
+	min-width: 87% !important;	
+}
+#booking-form {
+	color: #020202;
+	box-shadow: 3px 2px 2px 1px #BBBBBB;
+	background: white;
+}
+.nav-tabs {
+	border-bottom-color: white !important;
+}
+.nav-tabs .active {
+	color: #020202 !important;
+	border: none !important;
+		background: white !important;
+}
+#hero-desc {
+	width: 50% !important;
+}
+.featurette-image, .rounded-container, .rounded-corners img {
+	border-radius: 28px !important;
+}
+.card-img-top {
+	border-top-left-radius: 28px !important;
+	border-top-right-radius: 28px !important;
+}
+.card-body {
+	border-bottom-left-radius: 28px !important;
+	border-bottom-right-radius: 28px !important;
+}
+.rounded-card {
+	border-radius: 28px !important;
+}
+.card-img {
+	border-radius: 14px !important;
+}
+.fill-card img {
+	border-top-left-radius: 28px !important;
+	border-top-right-radius: 28px !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.dark-bg-1 {
+	position: relative;
+	background-color: #000000;
+	border-radius: 28px !important;
+}
+.dark-bg-1 img{
+	opacity: 0.5;
+}
+.on-img{
+	position: absolute;
+	bottom: 0;
+}
+#nav-buttons {
+    min-width:200px !important;
+	position: absolute !important;
+	top: 0 !important;
+	right: 16px !important;
+}
+#nav-buttons li {
+	 	display: inline-block !important;
+}
+#nav-buttons a {
+	color: #808080;
+}
+nav{
+	 	min-height: 27px !important;
+}
+@media (max-width: 767px) {
+	.navbar-collapse {
+		text-align: left;
+		padding: 2%;
+		width: 100% !important;
+	}
+	.navbar-toggler {
+		float: right !important;
+	}
+	#site-logo {
+		height: 45px;
+	}
+}
+footer {
+	background-color: #001F59;
+}
+.swap-btn {
+	right: -13px;
+	bottom: 5px;
+	padding: 4px 4px !important;
+	z-index: 30;
+	color: #0000FF !important;
+}
+.swap-btn a {
+	font-family: Arial !important;	
+}
+.jumbotron {
+	padding-bottom: 90px !important;
+	border-radius: 0 !important;
+	overflow: hidden;
+	width: 100% !important;
+	background-color: #FFFFFF !important;
+}
+.jumbotron p {
+	position: relative;
+	z-index: 20;
+}
