@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="His_oasis">
+		<meta name="description" content="hotel booking">
+		<link rel="stylesheet" href="stlye.css">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<title>Oasis hotels</title>
+	</head>
+	<body>
+		<div class="container-fluid nav-header position-absolute">
+			<div class="text-left container-fluid position-relative pl-4">
+				<a href="index.php"><span class="pt-1 mt-1 text-dark" id="site-logo" >Oasis hotels</span></a>
+				<div id="nav-buttons" class="text-right">
+					<ul class="ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#"><i class="bi-person"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<hr class="mb-0 pb-0">
+			<nav class="text-left navbar navbar-expand-md navbar-light">
+				<div class="container-fluid">
+					<button class="navbar-toggler text-dark" data-target="#navbar01" data-toggle="collapse" type="button"> <i id="toggle-icon" class="bi-list"></i> </button>
+					<div class="text-left collapse navbar-collapse" id="navbar01">
+						<ul class="navbar-nav mr-auto text-left">
+							<li class="nav-item"><a class="nav-link" href="#">About</a></li><li class="nav-item"><a class="nav-link" href="#">Hotels</a></li><li class="nav-item"><a class="nav-link" href="#">Services</a></li><li class="nav-item"><a class="nav-link" href="#">Deals</a></li><li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<section class="jumbotron mb-0 text-dark text-left" style="padding-top:166px;position:relative;margin-top:0px;">
+			<h1 id="hero-heading">Discover Your Ideal Hotel</h1>
+			<p id="hero-desc" class="lead">Welcome to Oasis Hotels, where luxury meets the extraordinary. Immerse yourself in the sleek and stylish accommodations, Elegantly furnished rooms, large windows, and private balconies. </p>
+			<p> </p>
+			<svg width="40%" style="position: absolute;right:-242px;top:0%;opacity:0.7;" viewBox="0 0 300 500" preserveAspectRatio="none">
+				<defs>
+					<radialGradient id="grad" cx="50%" cy="50%" r="50%">
+						<stop offset="0%" stop-color="#1A73D2" stop-opacity="1" />
+						<stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+					</radialGradient>
+				</defs><circle cx="140" cy="140" r="140" fill="url(#grad)" />
+			</svg>
+		</section>
+		<div id="booking" class="container py-2 text-left" style="position:relative;z-index:30;top:-60px;">
+			<form id="booking-form" class="form pl-2 text-left">
+				<div class="row mx-auto pt-3">
+					<div class="form-group position-relative mx-md-0 px-md-2 col-md">
+						<label for="origin-field">Hotel</label>
+						<input type="text" class="form-control rounded-0" id="origin-field" placeholder="Hotel">
+					</div>
+					<div class="form-group mx-md-0 px-md-2 col">
+						<label for="depart">Check in</label>
+						<input type="date" class="form-control rounded-0" min="2024-05-06" max="2025-05-06" id="depart">
+					</div>
+					<div id="return-date" class="form-group mx-md-0 px-md-2 col">
+						<label for="return">Check out</label>
+						<input type="date" class="form-control rounded-0" min="2024-05-06" max="2025-05-06" id="return">
+					</div>
+					<div class="form-group mx-md-0 px-md-2 col-md">
+						<label for="passengers">Guests</label>
+						<select class="form-control rounded-0" id="passengers">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="form-group mx-md-0 px-md-2 col-md">
+						<label for="submit" style="visibility:hidden;">Search</label><br>
+						<button type="submit" class="btn btn-filled rounded-0">Search</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="container pt-3 pb-2 text-left text-dark" style="background-color:#FFFFFF;">
+			<div class="container py-3 text-left text-dark" style="background-color:#FFFFFF;">
+				<h3 style="color:#030303;">Popular Destinations</h3>
+				<p> Immerse yourself in the sleek and stylish accommodations, exquisite dining options, and to</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset\vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Nester Hotel</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<a href="new.html"><button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset\visualsofdana-T5pL6ciEn-I-unsplash.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Hotel Grand Plaza</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<a href="next.html"><button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Nike Hotel</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<a href="move.html"><button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container pt-3 pb-2 text-left text-dark" style="background-color:#FFFFFF;">
+			<div class="container py-3 text-left text-dark" style="background-color:#FFFFFF;">
+				<h3 style="color:#030303;">Hidden Gems</h3>
+				<p>Embark on a journey within the chic and sophisticated confines of our accommodations, where every detail has been meticulously curated</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset\room 3.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Yando Hotel</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<a href="into.html"><button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset\mky-moody-AUF6Gl4wwzA-unsplash.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Royal Hotel</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<a href="from.html"><button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2">
+						<div class="card box-shadow rounded-card">
+							<div class="card-img-top bg-light fill-card">
+								<img alt="" class="card-img" src="asset\point3d-commercial-imaging-ltd-GUno-FetWJM-unsplash.jpg">
+							</div>
+							<div class="card-body bg-light text-dark">
+								<h4>Joy Hotel</h4>
+								<p class="small text-muted"> Book A Room</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<button type="button" class="btn btn-outline-dark btn-sm">View details &gt;&gt;</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-4 text-left text-dark">
+			<div class="container my-3 text-left text-dark">
+				<h3 style="color:#001F59;">Facilities</h3>
+				<p>Discover our meticulously curated hotel facilities, designed to enhance your stay. From luxurious accommodations to a variety of dining options, we’ve got you covered.</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\room 3.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Rooms</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\bath.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Bathroom</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\t&t.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Towels and Toiletries</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\lanch.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Restaurant</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\gym.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Fitness Centers</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\spa.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Spas</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\con room.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Conference Rooms</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\pool.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Pools</a></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-2 gallery-col rounded-corners">
+						<div class="dark-bg-1">
+							<img alt="" src="asset\wifi.jpg">
+							<div class="on-img p-2">
+								<h5><a href="#" class="text-light">Free Wi-Fi</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-4">
+			<div class="container">
+				<div class="row featurette py-2 text-dark">
+					<div class="col-md-7">
+						<h3 style="color:#001F59;" class="featurette-heading">About</h3>
+						<p> Book your</p>
+					</div>
+					<div class="col-md-5">
+						<p>Welcome to Oasis Hotels, where luxury meets the extraordinary. Immerse yourself in the sleek and stylish accommodations,  Welcome to Venom Hotels, where luxury meets the extraordinary. Immerse yourself in the sleek and stylish accommodations, </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="py-5 text-center">
+			<div class="container">
+				<h5 class="text-light">Follow us</h5>
+				<ul class="list-unstyled">
+					<li class="d-inline-block pr-1"><a href="#" class="bi-facebook text-light"></a></li>
+					<li class="d-inline-block pr-1"><a href="#" class="bi-twitter text-light"></a></li>
+					<li class="d-inline-block pr-1"><a href="#" class="bi-instagram text-light"></a></li>
+					<li class="d-inline-block pr-1"><a href="#" class="bi-linkedin text-light"></a></li>
+					<li class="d-inline-block pr-1"><a href="#" class="bi-youtube text-light"></a></li>
+				</ul>
+				<p class="text-light mb-0">Oasis hotels &copy; 2024. All Rights Reserved. <a href="https://www.pexels.com" style="text-decoration: underline;" class="text-light">Photos provided by Pexels</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
